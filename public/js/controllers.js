@@ -77,6 +77,16 @@ app.controller('singleImageCtrl', function($scope, $state, Image, $stateParams, 
         })
     };
   }
+  $scope.deleteImg = (id) => {
+    Image.delete(id)
+      .then((res) => {
+        Image.getAll()
+          .then((res) => {
+            $scope.images = res.data;
+            $scope.loading = false;
+          })
+      })
+  }
 });
 
 app.controller('editImageCtrl', function($scope, $state, Image, $stateParams) {
