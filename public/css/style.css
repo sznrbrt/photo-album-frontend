@@ -1,0 +1,130 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #EEF3F6;
+}
+
+.topBar {
+  height: 60px;
+  width: 100%;
+  background-color: #EEF3F6;
+}
+
+.noBorPad {
+  border: 0;
+  padding: 0;
+}
+
+.topBarLogo, .topBarLogo:hover, .topBarLogo:focus {
+  line-height: 60px;
+  vertical-align: middle;
+  margin-left: 25px;
+  color:black;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 150%;
+}
+
+.topBarLink, .topBarLink:hover, .topBarLink:focus {
+  line-height: 60px;
+  vertical-align: middle;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+.topBarLogo:hover{
+  font-weight: bolder;
+}
+
+.topBarLink:hover{
+  font-weight: bolder;
+  margin-right: -3px;
+}
+
+.topBarButton {
+  line-height: 60px;
+  vertical-align: middle;
+  border-radius: 3px;
+  background-color: transparent;
+  margin-right: 25px;
+  border: 1px solid grey;
+  padding: 5px 15px;
+  color: #1DBB9B;
+}
+
+.register, .register:hover {
+  background-color: #1DBB9B;
+  border-color: transparent;
+  color:white;
+  text-decoration: none;
+}
+
+.logIn:hover {
+  background-color: #1DBB9B;
+  border-color: transparent;
+  color:white;
+  text-decoration: none;
+}
+.well {
+  margin-bottom: 0;
+}
+
+.auctionImg {
+  width:200px;
+  height: 150px;
+}
+
+.auctionPanelContent {
+  margin-top: 5px;
+}
+
+.openDetails {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.addNewAuction {
+  background-color:#1DBB9B;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.newAuction {
+  margin-top: 10px;
+}
+
+.imagesTrash {
+  font-size: 1.5em;
+  margin-top: 17px;
+  margin-left: 30px;
+  color:#1DBB9B;
+}
+.imageTrash {
+  font-size: 1.5em;
+  margin-left: 5px;
+  color:#1DBB9B;
+}
+
+.singleImg {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.editImage {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.btn.logInButton {
+  background-color:#1DBB9B;
+  color:white;
+}
+
+.multiBox {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.addToAlbum {
+  margin-left: 20px;
+}

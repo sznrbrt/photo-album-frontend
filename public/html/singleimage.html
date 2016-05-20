@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="well">
+        <div class="row profileItem">
+          <b>Created At: <span style="color:blue">{{ image.createdAt | date:"medium" }}</span></b>
+          <a ng-click="deleteImg(image._id)"><i class="fa fa-trash imageTrash" aria-hidden="true"></i></a>
+        </div>
+        <div class="row profileItem">
+          <b>Albums:
+            <ol>
+              <li ng-repeat="album in image.albums">{{album.name}}</li>
+            </ol></b>
+        </div>
+        <div class="row profileItem">
+          <img ng-src="{{ image.imageUrl }}" class="singleImg img-responsive">
+        </div>
+        <div class="row profileItem">
+          <button class="btn btn-primary btn-sm editImage" ng-click="editImage()">Edit Image</button>
+        </div>
+        <div class="row profileItem">
+          <form ng-submit="addToAlbum()">
+            <div class="form-group multiBox">
+              <label for="sel1">Select an album:</label>
+              <select class="form-control" ng-model="albumname">
+                <option ng-repeat="album in albums" ng-value="album._id">{{album.name}}</option>
+              </select>
+            </div>
+            <button class="btn btn-primary btn-sm addToAlbum">Add to album</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Album</title>
+
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/bower_components/spin.js/spin.js"></script>
+  <script src="/bower_components/angular-spinner/angular-spinner.js"></script>
+  <script src="/bower_components/ngstorage/ngStorage.js"></script>
+  <script src="/bower_components/angular-route/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+
+  <script src="/js/module.js"></script>
+  <script src="/js/controllers.js"></script>
+  <script src="/js/services.js"></script>
+</head>
+<body ng-app="photoalbumApp" ng-controller="mainCtrl">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 noBorPad">
+        <div class="topBar">
+          <div class="row">
+            <div class="col-xs-6">
+              <a ui-sref="images" class="topBarLogo">PHOTO ALBUM</a>
+              <a class="topBarLink" ui-sref="images">Images</a>
+              <a class="topBarLink" ui-sref="albums">Albums</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ui-view></ui-view>
+</body>
+</html>
